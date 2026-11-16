@@ -1,0 +1,6 @@
+- name: Unzip project
+  run: unzip chess-assistant.zip -d .
+
+- name: Build APK
+  working-directory: chess-assistant
+  run: ./gradlew assembleDebug
